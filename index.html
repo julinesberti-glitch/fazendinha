@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -255,20 +256,20 @@ var AIMG={};
 
 var SK='fazendinha_v3';
 var LETTERS=[
-  {l:'A',p:'\u{1F34E}',w:'Abacaxi',s:'A de Abacaxi'},{l:'B',p:'\u{1F34C}',w:'Banana',s:'B de Banana'},
-  {l:'C',p:'\u{1F955}',w:'Cenoura',s:'C de Cenoura'},{l:'D',p:'\u{1F436}',w:'Cachorro',s:'D de Cachorro'},
+  {l:'A',p:'\u{1F34D}',w:'Abacaxi',s:'A de Abacaxi'},{l:'B',p:'\u{1F34C}',w:'Banana',s:'B de Banana'},
+  {l:'C',p:'\u{1F955}',w:'Cenoura',s:'C de Cenoura'},{l:'D',p:'\u{1F436}',w:'Cachorro',s:'C de Cachorro'},
   {l:'E',p:'\u{1F418}',w:'Elefante',s:'E de Elefante'},{l:'F',p:'\u{1F338}',w:'Flor',s:'F de Flor'},
-  {l:'G',p:'\u{1F414}',w:'Galinha',s:'G de Galinha'},{l:'H',p:'\u{1F3E0}',w:'Casa',s:'H de Casa'},
-  {l:'I',p:'\u{1F98E}',w:'Iguana',s:'I de Iguana'},{l:'J',p:'\u{1F40A}',w:'Jacara',s:'J de Jacara'},
-  {l:'L',p:'\u{1F981}',w:'Leao',s:'L de Leao'},{l:'M',p:'\u{1F348}',w:'Melao',s:'M de Melao'},
+  {l:'G',p:'\u{1F414}',w:'Galinha',s:'G de Galinha'},{l:'C',p:'\u{1F3E0}',w:'Casa',s:'C de Casa'},
+  {l:'I',p:'\u{1F98E}',w:'Iguana',s:'I de Iguana'},{l:'J',p:'\u{1F40A}',w:'Jacaré',s:'J de Jacaré'},
+  {l:'L',p:'\u{1F981}',w:'Leão',s:'L de Leão'},{l:'M',p:'\u{1F348}',w:'Melao',s:'M de Melao'},
   {l:'N',p:'\u2601\uFE0F',w:'Nuvem',s:'N de Nuvem'},{l:'O',p:'\u{1F411}',w:'Ovelha',s:'O de Ovelha'},
-  {l:'P',p:'\u{1F41F}',w:'Peixe',s:'P de Peixe'},{l:'R',p:'\u{1F438}',w:'Ra',s:'R de Ra'},
+  {l:'P',p:'\u{1F41F}',w:'Peixe',s:'P de Peixe'},{l:'R',p:'\u{1F438}',w:'Ra',s:'R de Rã'},
   {l:'S',p:'\u{1F31E}',w:'Sol',s:'S de Sol'},{l:'T',p:'\u{1F422}',w:'Tartaruga',s:'T de Tartaruga'},
   {l:'U',p:'\u{1F347}',w:'Uva',s:'U de Uva'},{l:'V',p:'\u{1F404}',w:'Vaca',s:'V de Vaca'},
-  {l:'Z',p:'\u{1F993}',w:'Zebra',s:'Z de Zebra'},
+  {l:'Z',p:'\u{1F993}',w:'Zebra',s:'Z de Zebra'},{l:'S',p:'\u{1F438}',w:'Sapo',s:'S de Sapo'},{l:'M',p:'\u{1F34E}',w:'Maçã',s:'M de Maçã'}
 ];
 var CNT_O=[
-  {e:'\u{1F34E}',sg:'maca',pl:'macas'},{e:'\u2B50',sg:'estrela',pl:'estrelas'},
+  {e:'\u{1F34E}',sg:'maçã',pl:'maçãs'},{e:'\u2B50',sg:'estrela',pl:'estrelas'},
   {e:'\u{1F431}',sg:'gatinho',pl:'gatinhos'},{e:'\u{1F98B}',sg:'borboleta',pl:'borboletas'},
   {e:'\u{1F388}',sg:'balao',pl:'baloes'},{e:'\u{1F36D}',sg:'pirulito',pl:'pirulitos'},
   {e:'\u{1F438}',sg:'sapo',pl:'sapos'},{e:'\u{1F319}',sg:'lua',pl:'luas'},
@@ -277,7 +278,7 @@ var CNT_O=[
 var MEM_E=['\u{1F981}','\u{1F42F}','\u{1F98A}','\u{1F43B}','\u{1F43C}','\u{1F984}','\u{1F42C}','\u{1F98B}','\u{1F33A}','\u{1F353}','\u{1F355}','\u26BD','\u{1F3B8}','\u{1F680}','\u{1F308}','\u{1F382}','\u{1F419}','\u{1F980}','\u{1F33B}','\u{1F99C}'];
 var M3_E=['\u{1F34E}','\u{1F34C}','\u{1F353}','\u{1F355}','\u2B50','\u{1F338}','\u{1F98B}','\u{1F431}','\u{1F436}','\u{1F981}','\u{1F308}','\u{1F382}','\u{1F680}','\u{1F438}','\u{1F36D}','\u{1F33A}','\u{1F43C}','\u{1F98A}','\u{1F3B8}','\u{1F42C}'];
 var COLORS=[{n:'Vermelho',h:'#EF5350',e:'\u{1F534}'},{n:'Azul',h:'#1976D2',e:'\u{1F535}'},{n:'Verde',h:'#4CAF50',e:'\u{1F7E2}'},{n:'Amarelo',h:'#FFD700',e:'\u{1F7E1}'},{n:'Roxo',h:'#7B1FA2',e:'\u{1F7E3}'},{n:'Laranja',h:'#FF9800',e:'\u{1F7E0}'}];
-var SHAPES=[{n:'Circulo',d:'circle'},{n:'Quadrado',d:'square'},{n:'Triangulo',d:'triangle'},{n:'Estrela',d:'star'}];
+var SHAPES=[{n:'Circulo',d:'circle'},{n:'Quadrado',d:'square'},{n:'Triângulo',d:'triangle'},{n:'Estrela',d:'star'}];
 var FEED=[
   {k:'vaca',   n:'Vaca',    img:'vaca',    food:{e:'\u{1F33E}',n:'Capim',ok:true},   w:[{e:'\u{1F41F}',n:'Peixe'},{e:'\u{1F355}',n:'Pizza'},{e:'\u{1F33D}',n:'Milho'}]},
   {k:'boi',    n:'Boi',     img:'boi',     food:{e:'\u{1F33E}',n:'Capim',ok:true},   w:[{e:'\u{1F41F}',n:'Peixe'},{e:'\u{1F36D}',n:'Doce'}, {e:'\u{1F33D}',n:'Milho'}]},
@@ -285,7 +286,7 @@ var FEED=[
   {k:'ovelha', n:'Ovelha',  img:'ovelha',  food:{e:'\u{1F33F}',n:'Grama',ok:true},   w:[{e:'\u{1F41F}',n:'Peixe'},{e:'\u{1F355}',n:'Pizza'},{e:'\u{1F33D}',n:'Milho'}]},
   {k:'pintinho',n:'Pintinho',img:'pintinho',food:{e:'\u{1F33E}',n:'Milhinhos',ok:true},w:[{e:'\u{1F41F}',n:'Peixe'},{e:'\u{1F355}',n:'Pizza'},{e:'\u{1F33F}',n:'Grama'}]},
 ];
-var CROPS={carrot:{i:'\u{1F955}',n:'Cenoura',g:8000,s:5},strawberry:{i:'\u{1F353}',n:'Morango',g:12000,s:10},corn:{i:'\u{1F33D}',n:'Milho',g:18000,s:15,c:10},apple:{i:'\u{1F34E}',n:'Maca',g:25000,s:20,c:20},sunflower:{i:'\u{1F33B}',n:'Girassol',g:30000,s:30,c:50}};
+var CROPS={carrot:{i:'\u{1F955}',n:'Cenoura',g:8000,s:5},strawberry:{i:'\u{1F353}',n:'Morango',g:12000,s:10},corn:{i:'\u{1F33D}',n:'Milho',g:18000,s:15,c:10},apple:{i:'\u{1F34E}',n:'Maçã',g:25000,s:20,c:20},sunflower:{i:'\u{1F33B}',n:'Girassol',g:30000,s:30,c:50}};
 var SP={egg:8,milk:12,honey:20,carrot:5,strawberry:10,corn:15,apple:20,sunflower:30};
 var RWDS=[
   {id:'cat',  imgK:'gato',    n:'Gatinho',    r:'Nivel 1',   ok:function(){return S.level>=1;}},
@@ -387,20 +388,132 @@ function selM3(b){if(b.classList.contains('matched')||b.classList.contains('gone
 
 // ALPHABET
 var aCur=null,aDone=false;
-function speakAbc(){if(aCur)speak(aCur.s+'. Qual e a letra?',0.82);}
-function startAbc(){aDone=false;aCur=LETTERS[Math.floor(Math.random()*LETTERS.length)];$('abc-ltr').textContent=aCur.l;$('abc-pic').textContent=aCur.p;$('abc-word').textContent='de '+aCur.w;$('abc-fb').className='fb';$('abc-nxt').classList.remove('show');var cfg=ABC_PH[Math.min(S.abcPh,ABC_PH.length)-1];var oth=LETTERS.filter(function(x){return x.l!==aCur.l;}).sort(function(){return Math.random()-.5;}).slice(0,cfg.o-1);var opts=[aCur].concat(oth).sort(function(){return Math.random()-.5;});var cont=$('abc-opts');cont.className='aopts '+(cfg.o>3?'c4':'c3');cont.innerHTML='';opts.forEach(function(o){var b=document.createElement('button');b.className='abtn';b.textContent=o.l;b.addEventListener('click',function(){ansAbc(b,o.l===aCur.l);});cont.appendChild(b);});setTimeout(function(){speak(aCur.s+'. Qual e a letra?',0.82);},400);}
+function speakAbc(){if(aCur)speak(aCur.s+'. Qual é a letra?',0.82);}
+function startAbc(){aDone=false;aCur=LETTERS[Math.floor(Math.random()*LETTERS.length)];$('abc-ltr').textContent=aCur.l;$('abc-pic').textContent=aCur.p;$('abc-word').textContent='de '+aCur.w;$('abc-fb').className='fb';$('abc-nxt').classList.remove('show');var cfg=ABC_PH[Math.min(S.abcPh,ABC_PH.length)-1];var oth=LETTERS.filter(function(x){return x.l!==aCur.l;}).sort(function(){return Math.random()-.5;}).slice(0,cfg.o-1);var opts=[aCur].concat(oth).sort(function(){return Math.random()-.5;});var cont=$('abc-opts');cont.className='aopts '+(cfg.o>3?'c4':'c3');cont.innerHTML='';opts.forEach(function(o){var b=document.createElement('button');b.className='abtn';b.textContent=o.l;b.addEventListener('click',function(){ansAbc(b,o.l===aCur.l);});cont.appendChild(b);});setTimeout(function(){speak(aCur.s+'. Qual é a letra?',0.82);},400);}
 function ansAbc(b,ok){if(aDone)return;aDone=true;if(ok){b.classList.add('correct');S.abcSc+=10;S.abcWon++;$('abc-sc').textContent=S.abcSc;coins(10);var lu=xp(15);sfx.ok();fb('abc-fb','\u{1F389} Isso! Letra '+aCur.l+'! +10 \u{1FA99}','ok');speak('Muito bem!');$('abc-nxt').classList.add('show');if(S.abcWon%4===0&&S.abcPh<ABC_PH.length){S.abcPh++;hud();setTimeout(function(){cel('\u{1F524}','Fase '+S.abcPh+'!','Avancou no Alfabeto!','+20 \u{1FA99}',lu?S.level:0);},400);}sched();}else{b.classList.add('wrong');fb('abc-fb','Era a letra '+aCur.l+'!','err');sfx.no();speak('Nao! A letra e '+aCur.l);$('abc-nxt').classList.add('show');}}
 
 // COUNTING
 var cObj=null,cCorr=0,cDone=false;
-function speakCnt(){if(cObj&&cCorr>0)speak('Quantas '+(cCorr===1?cObj.sg:cObj.pl)+' voce ve? Conta e me diz!',0.85);}
-function startCnt(){cDone=false;var cfg=CNT_PH[Math.min(S.cntPh,CNT_PH.length)-1];cObj=CNT_O[Math.floor(Math.random()*CNT_O.length)];var mn=cfg.m<=5?1:2;cCorr=Math.floor(Math.random()*(cfg.m-mn+1))+mn;var nome=cCorr===1?cObj.sg:cObj.pl;$('cnt-ask').textContent='Quantas '+nome+' voce ve? \u{1F446}';var div=$('cnt-objs');div.innerHTML='';for(var i=0;i<cCorr;i++){var s=document.createElement('span');s.textContent=cObj.e;s.style.fontSize=cCorr>7?'30px':'38px';div.appendChild(s);}$('cnt-fb').className='fb';$('cnt-nxt').classList.remove('show');var opts=[];opts.push(cCorr);var tr=0;var n=cfg.c==='h5'?5:3;while(opts.length<n&&tr<60){var r2=cCorr+Math.floor(Math.random()*7)-3;if(r2>=1&&r2<=cfg.m&&opts.indexOf(r2)<0)opts.push(r2);tr++;}while(opts.length<n){for(var v=1;v<=cfg.m;v++){if(opts.indexOf(v)<0){opts.push(v);break;}}}opts=opts.sort(function(){return Math.random()-.5;});var cont=$('cnt-opts');cont.className='copts '+cfg.c;cont.innerHTML='';opts.forEach(function(nv){var b=document.createElement('button');b.className='cbtn';b.textContent=nv;b.addEventListener('click',function(){ansCnt(b,nv===cCorr);});cont.appendChild(b);});setTimeout(function(){speak('Agora vamos contar! Quantas '+nome+' voce ve?',0.85);},400);}
-function ansCnt(b,ok){if(cDone)return;cDone=true;var nome=cCorr===1?cObj.sg:cObj.pl;if(ok){b.classList.add('correct');S.cntSc+=10;S.cntWon++;$('cnt-sc').textContent=S.cntSc;coins(10);var lu=xp(12);sfx.ok();fb('cnt-fb','\u2705 '+(cCorr===1?'E uma ':('Sao '+cCorr+' '))+nome+'! +10 \u{1FA99}','ok');speak((cCorr===1?'E uma ':('Sao '+cCorr+' '))+nome+'! Muito bem!');$('cnt-nxt').classList.add('show');if(S.cntWon%4===0&&S.cntPh<CNT_PH.length){S.cntPh++;hud();}sched();}else{b.classList.add('wrong');fb('cnt-fb','Eram '+cCorr+' '+nome+'! \u{1F4AA}','err');sfx.no();speak('Nao! '+(cCorr===1?'E uma ':('Sao '+cCorr+' '))+nome);$('cnt-nxt').classList.add('show');}}
 
-// COLORS
+function speakCnt(){
+  if(cObj && cCorr>0){
+    speak('Quantos '+(cCorr===1?cObj.sg:cObj.pl)+' você vê? Conte e me diga!',0.85);
+  }
+}
+
+function startCnt(){
+  cDone=false;
+  var cfg=CNT_PH[Math.min(S.cntPh,CNT_PH.length)-1];
+  cObj=CNT_O[Math.floor(Math.random()*CNT_O.length)];
+
+  var mn=cfg.m<=5?1:2;
+  cCorr=Math.floor(Math.random()*(cfg.m-mn+1))+mn;
+
+  var nome=cCorr===1?cObj.sg:cObj.pl;
+
+  $('cnt-ask').textContent='Quantos '+nome+' você vê? 👆';
+
+  var div=$('cnt-objs');
+  div.innerHTML='';
+
+  for(var i=0;i<cCorr;i++){
+    var s=document.createElement('span');
+    s.textContent=cObj.e;
+    s.style.fontSize=cCorr>7?'30px':'38px';
+    div.appendChild(s);
+  }
+
+  $('cnt-fb').className='fb';
+  $('cnt-nxt').classList.remove('show');
+
+  var opts=[];
+  opts.push(cCorr);
+
+  var tr=0;
+  var n=cfg.c==='h5'?5:3;
+
+  while(opts.length<n && tr<60){
+    var r2=cCorr+Math.floor(Math.random()*7)-3;
+    if(r2>=1 && r2<=cfg.m && opts.indexOf(r2)<0) opts.push(r2);
+    tr++;
+  }
+
+  while(opts.length<n){
+    for(var v=1;v<=cfg.m;v++){
+      if(opts.indexOf(v)<0){
+        opts.push(v);
+        break;
+      }
+    }
+  }
+
+  opts=opts.sort(function(){return Math.random()-.5;});
+
+  var cont=$('cnt-opts');
+  cont.className='copts '+cfg.c;
+  cont.innerHTML='';
+
+  opts.forEach(function(nv){
+    var b=document.createElement('button');
+    b.className='cbtn';
+    b.textContent=nv;
+    b.addEventListener('click',function(){
+      ansCnt(b,nv===cCorr);
+    });
+    cont.appendChild(b);
+  });
+
+  setTimeout(function(){
+    speak('Agora vamos contar! Quantos '+nome+' você vê?',0.85);
+  },400);
+}
+
+function ansCnt(b,ok){
+  if(cDone) return;
+  cDone=true;
+
+  var nome=cCorr===1?cObj.sg:cObj.pl;
+
+  if(ok){
+    b.classList.add('correct');
+    S.cntSc+=10;
+    S.cntWon++;
+    $('cnt-sc').textContent=S.cntSc;
+
+    coins(10);
+    var lu=xp(12);
+
+    sfx.ok();
+
+    fb('cnt-fb','✅ '+(cCorr===1?'É um ':('São '+cCorr+' '))+nome+'! +10 🪙','ok');
+
+    speak('Muito bem! '+(cCorr===1?'É um ':('São '+cCorr+' '))+nome+'!');
+
+    $('cnt-nxt').classList.add('show');
+
+    if(S.cntWon%4===0 && S.cntPh<CNT_PH.length){
+      S.cntPh++;
+      hud();
+    }
+
+    sched();
+
+  } else {
+
+    b.classList.add('wrong');
+
+    fb('cnt-fb','São '+cCorr+' '+nome+'! 💪','err');
+
+    sfx.no();
+
+    speak('Não! São '+cCorr+' '+nome+'!');
+
+    $('cnt-nxt').classList.add('show');
+  }
+}// COLORS
 var colCur=null,colMode='color',colDone=false;
-function speakCol(){speak(colMode==='color'?'Que cor e essa?':'Que forma e essa?');}
-function startCol(){colDone=false;colMode=S.colPh%2===1?'color':'shape';$('col-fb').className='fb';$('col-nxt').classList.remove('show');$('col-badge').textContent=colMode==='color'?'Cores':'Formas';var sw=$('col-shape');var oc=$('col-opts');if(colMode==='color'){colCur=COLORS[Math.floor(Math.random()*COLORS.length)];sw.innerHTML='<div style="width:90px;height:90px;background:'+colCur.h+';border-radius:50%;box-shadow:0 4px 12px rgba(0,0,0,.2)"></div>';$('col-ask').textContent='Que cor e essa? \u{1F3A8}';var oth=COLORS.filter(function(c){return c.n!==colCur.n;}).sort(function(){return Math.random()-.5;}).slice(0,3);var opts=[colCur].concat(oth).sort(function(){return Math.random()-.5;});oc.className='colopts';oc.innerHTML='';opts.forEach(function(c){var b=document.createElement('button');b.className='colbtn';b.style.cssText='background:'+c.h+';border-color:'+c.h;b.innerHTML=c.e+'<br>'+c.n;b.addEventListener('click',function(){ansCol(b,c.n===colCur.n);});oc.appendChild(b);});setTimeout(function(){speak('Que cor e essa?');},400);}else{colCur=SHAPES[Math.floor(Math.random()*SHAPES.length)];var svgs={circle:'<circle cx="40" cy="40" r="36" fill="#1976D2"/>',square:'<rect x="8" y="8" width="64" height="64" rx="6" fill="#EF5350"/>',triangle:'<polygon points="40,6 76,74 4,74" fill="#4CAF50"/>',star:'<polygon points="40,4 49,30 76,30 54,48 62,74 40,58 18,74 26,48 4,30 31,30" fill="#FFD700"/>'};sw.innerHTML='<svg width="90" height="90" viewBox="0 0 80 80">'+svgs[colCur.d]+'</svg>';$('col-ask').textContent='Que forma e essa? \u{1F537}';var oth2=SHAPES.filter(function(s){return s.n!==colCur.n;}).sort(function(){return Math.random()-.5;}).slice(0,3);var opts2=[colCur].concat(oth2).sort(function(){return Math.random()-.5;});oc.className='colopts';oc.innerHTML='';opts2.forEach(function(s){var b=document.createElement('button');b.className='colbtn';b.style.cssText='background:#E3F2FD;color:#1565C0;border-color:#90CAF9;text-shadow:none';b.textContent=s.n;b.addEventListener('click',function(){ansCol(b,s.n===colCur.n);});oc.appendChild(b);});setTimeout(function(){speak('Que forma e essa?');},400);}}
+function speakCol(){speak(colMode==='color'?'Que cor é essa?':'Que forma é essa?');}
+function startCol(){colDone=false;colMode=S.colPh%2===1?'color':'shape';$('col-fb').className='fb';$('col-nxt').classList.remove('show');$('col-badge').textContent=colMode==='color'?'Cores':'Formas';var sw=$('col-shape');var oc=$('col-opts');if(colMode==='color'){colCur=COLORS[Math.floor(Math.random()*COLORS.length)];sw.innerHTML='<div style="width:90px;height:90px;background:'+colCur.h+';border-radius:50%;box-shadow:0 4px 12px rgba(0,0,0,.2)"></div>';$('col-ask').textContent='Que cor é essa? \u{1F3A8}';var oth=COLORS.filter(function(c){return c.n!==colCur.n;}).sort(function(){return Math.random()-.5;}).slice(0,3);var opts=[colCur].concat(oth).sort(function(){return Math.random()-.5;});oc.className='colopts';oc.innerHTML='';opts.forEach(function(c){var b=document.createElement('button');b.className='colbtn';b.style.cssText='background:'+c.h+';border-color:'+c.h;b.innerHTML=c.e+'<br>'+c.n;b.addEventListener('click',function(){ansCol(b,c.n===colCur.n);});oc.appendChild(b);});setTimeout(function(){speak('Que cor é essa?');},400);}else{colCur=SHAPES[Math.floor(Math.random()*SHAPES.length)];var svgs={circle:'<circle cx="40" cy="40" r="36" fill="#1976D2"/>',square:'<rect x="8" y="8" width="64" height="64" rx="6" fill="#EF5350"/>',triangle:'<polygon points="40,6 76,74 4,74" fill="#4CAF50"/>',star:'<polygon points="40,4 49,30 76,30 54,48 62,74 40,58 18,74 26,48 4,30 31,30" fill="#FFD700"/>'};sw.innerHTML='<svg width="90" height="90" viewBox="0 0 80 80">'+svgs[colCur.d]+'</svg>';$('col-ask').textContent='Que forma é essa? \u{1F537}';var oth2=SHAPES.filter(function(s){return s.n!==colCur.n;}).sort(function(){return Math.random()-.5;}).slice(0,3);var opts2=[colCur].concat(oth2).sort(function(){return Math.random()-.5;});oc.className='colopts';oc.innerHTML='';opts2.forEach(function(s){var b=document.createElement('button');b.className='colbtn';b.style.cssText='background:#E3F2FD;color:#1565C0;border-color:#90CAF9;text-shadow:none';b.textContent=s.n;b.addEventListener('click',function(){ansCol(b,s.n===colCur.n);});oc.appendChild(b);});setTimeout(function(){speak('Que forma é essa?');},400);}}
 function ansCol(b,ok){if(colDone)return;colDone=true;if(ok){b.classList.add('correct');S.colSc+=10;S.colWon++;$('col-sc').textContent=S.colSc;coins(10);xp(12);sfx.ok();fb('col-fb','\u{1F389} Isso! E '+colCur.n+'! +10 \u{1FA99}','ok');speak('Muito bem! E '+colCur.n+'!');$('col-nxt').classList.add('show');if(S.colWon%4===0){S.colPh++;hud();}sched();}else{b.classList.add('wrong');fb('col-fb','Era '+colCur.n+'!','err');sfx.no();speak('Nao! E '+colCur.n);$('col-nxt').classList.add('show');}}
 
 // FEED
@@ -466,7 +579,7 @@ function setupFarmClick(){var cv=$('farm-canvas');if(!cv)return;function tap(e){
 function clickPlot(i){var pl=S.plots[i];var now=Date.now();if(pl.state==='growing'&&pl.crop&&now-pl.planted>=CROPS[pl.crop].g)pl.state='ready';if(pl.state==='empty'){if(!S.selCrop){toast('Escolha uma semente na Loja!');return;}if(S.water<=0){toast('Sem agua! Toque no poco!');return;}pl.state='growing';pl.crop=S.selCrop;pl.planted=now;pl.watered=true;S.water=Math.max(0,S.water-1);sfx.plant();speak('Plantando '+CROPS[S.selCrop].n+'!');toast(CROPS[S.selCrop].i+' Plantado!');}else if(pl.state==='growing'){if(!pl.watered&&S.water>0){pl.watered=true;S.water--;pl.planted+=(CROPS[pl.crop].g-(now-pl.planted))*.3;sfx.water();toast('Regado!');}else if(!pl.watered)toast('Sem agua! Toque no poco!');else toast('Crescendo... '+Math.min(Math.floor((now-pl.planted)/CROPS[pl.crop].g*100),99)+'%');}else if(pl.state==='ready'){var cr=pl.crop;S.barn[cr]=(S.barn[cr]||0)+9;pl.state='empty';pl.crop=null;pl.watered=false;coins(2);xp(8);sfx.harv();speak(CROPS[cr].n+' colhida!');toast(CROPS[cr].i+' 9x colhidos!');}updateFarmStatus();sched();}
 function clickChicks(){if(S.animals.eggs>0){S.barn.egg=(S.barn.egg||0)+S.animals.eggs;S.animals.eggs=0;xp(3);sfx.egg();speak('Ovos coletados!');toast('Ovos coletados!');}else if(!S.animals.chicFed&&S.barn.corn>=9){S.barn.corn=Math.max(0,S.barn.corn-9);S.animals.chicFed=true;S.animals.chicFedAt=Date.now();var eggs=S.animals.chickens*2+Math.floor(Math.random()*2);setTimeout(function(){S.animals.eggs+=eggs;sfx.egg();toast('+'+eggs+' ovos!');sched();},3000);setTimeout(function(){S.animals.chicFed=false;sched();},20000);sfx.ok();speak('Galinhas alimentadas!');toast('Alimentadas! Aguarde...');}else if(!S.animals.chicFed)toast('Precisa de 9 milhos!');else toast('Ja comeram! Aguarde...');updateFarmStatus();sched();}
 function clickCow(){if(S.animals.milk>0){S.barn.milk=(S.barn.milk||0)+S.animals.milk;S.animals.milk=0;xp(4);sfx.egg();speak('Leite coletado!');toast('Leite coletado!');}else if(!S.animals.cowFed&&S.barn.carrot>=9){S.barn.carrot=Math.max(0,S.barn.carrot-9);S.animals.cowFed=true;S.animals.cowFedAt=Date.now();setTimeout(function(){S.animals.milk+=3;toast('+3 leite!');sched();},5000);setTimeout(function(){S.animals.cowFed=false;sched();},25000);sfx.ok();speak('Vaca alimentada!');toast('Alimentada!');}else if(!S.animals.cowFed)toast('Precisa de 9 cenouras!');else toast('Ja comeu! Aguarde...');updateFarmStatus();sched();}
-function clickTree(i){if(!S.trees[i].grown){toast('Aguarde crescer!');return;}if(S.trees[i].ready){S.barn.apple=(S.barn.apple||0)+9;S.trees[i].ready=false;setTimeout(function(){S.trees[i].ready=true;sched();toast('Macas prontas!');},30000);xp(8);sfx.harv();speak('Colheu macas!');toast('9 macas!');}else toast('Ainda produzindo...');updateFarmStatus();sched();}
+function clickTree(i){if(!S.trees[i].grown){toast('Aguarde crescer!');return;}if(S.trees[i].ready){S.barn.apple=(S.barn.apple||0)+9;S.trees[i].ready=false;setTimeout(function(){S.trees[i].ready=true;sched();toast('Maçãs prontas!');},30000);xp(8);sfx.harv();speak('Colheu maçãs!');toast('9 maçãs!');}else toast('Ainda produzindo...');updateFarmStatus();sched();}
 function refillWater(){if(S.water>=5){toast('Regador cheio!');return;}S.water=5;sfx.water();speak('Regador cheio!');toast('5 usos!');sched();}
 function updateFarmStatus(){var div=$('farm-sb');if(!div)return;var items=[{i:'\u{1F4A7}',v:S.water},{i:'\u{1F95A}',v:S.barn.egg||0},{i:'\u{1F95B}',v:S.barn.milk||0},{i:'\u{1F955}',v:S.barn.carrot||0},{i:'\u{1F353}',v:S.barn.strawberry||0},{i:'\u{1F33D}',v:S.barn.corn||0},{i:'\u{1F34E}',v:S.barn.apple||0},{i:'\u{1F33B}',v:S.barn.sunflower||0}];div.innerHTML=items.filter(function(x){return x.v>0||x.i==='\u{1F4A7}';}).map(function(x){return '<div class="fstat">'+x.i+x.v+'</div>';}).join('');}
 
@@ -498,7 +611,7 @@ function renderShopItems(){
 }
 function buyAnimal(t,p){if(t==='bees'){if(S.coins<p){toast('Precisa '+p+' moedas!');return;}S.coins-=p;S.animals.bees=1;sfx.buy();hud();renderShop();cel('\u{1F41D}','Colmeia!','Mel chegando!','-'+p+' moedas',0);sched();return;}if(S.coins<p){toast('Precisa '+p+' moedas!');return;}if((t==='chicken'&&S.animals.chickens>=2)||(t==='chicken3'&&S.animals.chickens>=3)||(t==='cow'&&S.animals.cows>=1)||(t==='bull'&&S.animals.bulls>=1)||(t==='sheep'&&S.animals.sheep>=1)){toast('Ja tem!');return;}S.coins-=p;if(t==='chicken'||t==='chicken3')S.animals.chickens++;if(t==='cow')S.animals.cows=1;if(t==='bull')S.animals.bulls=1;if(t==='sheep')S.animals.sheep=1;sfx.buy();hud();renderShop();speak('Parabens! Novo animal!');cel('\u{1F404}','Novo Animal!','Bem-vindo!','-'+p+' moedas',0);sched();}
 function buyLand(k,p){if(S.coins<p){toast('Precisa '+p+' moedas!');return;}if((k==='l1'&&S.extraPlots>=3)||(k==='l2'&&S.extraPlots>=6)||(k==='f2'&&S.farmLv>=2)||(k==='f3'&&S.farmLv>=3)){toast('Ja tem!');return;}S.coins-=p;if(k==='l1'||k==='l2'){S.extraPlots+=3;for(var i=0;i<3;i++)S.plots.push({state:'empty',crop:null,planted:0,watered:false});}if(k==='f2')S.farmLv=2;if(k==='f3')S.farmLv=3;sfx.buy();hud();renderShop();toast('Comprado!');sched();}
-function renderSell(){var items=[{k:'egg',i:'\u{1F95A}',n:'Ovo'},{k:'milk',i:'\u{1F95B}',n:'Leite'},{k:'honey',i:'\u{1F36F}',n:'Mel'},{k:'carrot',i:'\u{1F955}',n:'Cenoura'},{k:'strawberry',i:'\u{1F353}',n:'Morango'},{k:'corn',i:'\u{1F33D}',n:'Milho'},{k:'apple',i:'\u{1F34E}',n:'Maca'},{k:'sunflower',i:'\u{1F33B}',n:'Girassol'}].filter(function(x){return (S.barn[x.k]||0)>0;});var total=items.reduce(function(a,it){return a+SP[it.k]*(S.barn[it.k]||0);},0);var b=$('modal-body');if(!items.length){b.innerHTML='<div style="color:rgba(255,255,255,.6);text-align:center;padding:24px;font-weight:700">Nada para vender ainda! Plante e colha primeiro!</div>';return;}b.innerHTML='<div class="sellgrid">'+items.map(function(it){return '<div class="slcard" data-k="'+it.k+'"><span class="slicon">'+it.i+'</span><div class="slname">'+it.n+'</div><div class="slprice">+'+SP[it.k]+'\u{1FA99}</div><div class="slqty">x'+(S.barn[it.k]||0)+'</div></div>';}).join('')+'</div><button class="sellall" id="sell-all-btn">Vender Tudo (+'+total+' moedas)</button>';b.querySelectorAll('[data-k]').forEach(function(el){el.addEventListener('click',function(){sellItem(this.dataset.k);});});var sab=document.getElementById('sell-all-btn');if(sab)sab.addEventListener('click',sellAll);}
+function renderSell(){var items=[{k:'egg',i:'\u{1F95A}',n:'Ovo'},{k:'milk',i:'\u{1F95B}',n:'Leite'},{k:'honey',i:'\u{1F36F}',n:'Mel'},{k:'carrot',i:'\u{1F955}',n:'Cenoura'},{k:'strawberry',i:'\u{1F353}',n:'Morango'},{k:'corn',i:'\u{1F33D}',n:'Milho'},{k:'apple',i:'\u{1F34E}',n:'Maçã'},{k:'sunflower',i:'\u{1F33B}',n:'Girassol'}].filter(function(x){return (S.barn[x.k]||0)>0;});var total=items.reduce(function(a,it){return a+SP[it.k]*(S.barn[it.k]||0);},0);var b=$('modal-body');if(!items.length){b.innerHTML='<div style="color:rgba(255,255,255,.6);text-align:center;padding:24px;font-weight:700">Nada para vender ainda! Plante e colha primeiro!</div>';return;}b.innerHTML='<div class="sellgrid">'+items.map(function(it){return '<div class="slcard" data-k="'+it.k+'"><span class="slicon">'+it.i+'</span><div class="slname">'+it.n+'</div><div class="slprice">+'+SP[it.k]+'\u{1FA99}</div><div class="slqty">x'+(S.barn[it.k]||0)+'</div></div>';}).join('')+'</div><button class="sellall" id="sell-all-btn">Vender Tudo (+'+total+' moedas)</button>';b.querySelectorAll('[data-k]').forEach(function(el){el.addEventListener('click',function(){sellItem(this.dataset.k);});});var sab=document.getElementById('sell-all-btn');if(sab)sab.addEventListener('click',sellAll);}
 function sellItem(k){var q=S.barn[k]||0;if(!q)return;var e=SP[k]*q;S.barn[k]=0;coins(e);xp(q);sfx.sell();toast('+'+e+' moedas!');renderSell();updateFarmStatus();}
 function sellAll(){var t=0;Object.keys(SP).forEach(function(k){var q=S.barn[k]||0;if(q>0){t+=SP[k]*q;xp(q);S.barn[k]=0;}});if(t>0){coins(t);sfx.sell();speak('Vendeu tudo!');toast('+'+t+' moedas!');}renderSell();updateFarmStatus();}
 function renderRwd(){$('modal-body').innerHTML='<div class="rwgrid">'+RWDS.map(function(r){var earned=S.rewards.indexOf(r.id)>=0;var imgEl=r.imgK&&earned?'<img src="'+r.imgK+'.png" class="rwimg">':'<div style="font-size:36px;text-align:center;margin-bottom:5px">'+(earned?(r.e||'\u2B50'):'\u2753')+'</div>';return '<div class="rwcard '+(earned?'earned':'')+'">'+imgEl+'<div class="rwname">'+(earned?r.n:'???')+'</div><div class="rwreq">'+r.r+'</div>'+(earned?'<div class="rwok">Na fazenda!</div>':'')+'</div>';}).join('')+'</div>';}
