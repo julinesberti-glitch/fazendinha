@@ -387,9 +387,57 @@ function selM3(b){if(b.classList.contains('matched')||b.classList.contains('gone
 
 // ALPHABET
 var aCur=null,aDone=false;
-function speakAbc(){if(aCur)speak(aCur.s+'. Qual é a letra?',0.82);}
-function startAbc(){aDone=false;aCur=LETTERS[Math.floor(Math.random()*LETTERS.length)];$('abc-ltr').textContent=aCur.l;$('abc-pic').textContent=aCur.p;$('abc-word').textContent='de '+aCur.w;$('abc-fb').className='fb';$('abc-nxt').classList.remove('show');var cfg=ABC_PH[Math.min(S.abcPh,ABC_PH.length)-1];var oth=LETTERS.filter(function(x){return x.l!==aCur.l;}).sort(function(){return Math.random()-.5;}).slice(0,cfg.o-1);var opts=[aCur].concat(oth).sort(function(){return Math.random()-.5;});var cont=$('abc-opts');cont.className='aopts '+(cfg.o>3?'c4':'c3');cont.innerHTML='';opts.forEach(function(o){var b=document.createElement('button');b.className='abtn';b.textContent=o.l;b.addEventListener('click',function(){ansAbc(b,o.l===aCur.l);});cont.appendChild(b);});setTimeout(function(){speak(aCur.s+'. Qual é a letra?',0.82);},400);}
-function ansAbc(b,ok){if(aDone)return;aDone=true;if(ok){b.classList.add('correct');S.abcSc+=10;S.abcWon++;$('abc-sc').textContent=S.abcSc;coins(10);var lu=xp(15);sfx.ok();fb('abc-fb','\u{1F389} Isso! Letra '+aCur.l+'! +10 \u{1FA99}','ok');speak('Muito bem!');$('abc-nxt').classList.add('show');if(S.abcWon%4===0&&S.abcPh<ABC_PH.length){S.abcPh++;hud();setTimeout(function(){cel('\u{1F524}','Fase '+S.abcPh+'!','Avancou no Alfabeto!','+20 \u{1FA99}',lu?S.level:0);},400);}sched();}else{b.classList.add('wrong');fb('abc-fb','Era a letra '+aCur.l+'!','err');sfx.no();speak('Não! A letra e '+aCur.l);$('abc-nxt').classList.add('show');}}
+function speakAbc(){
+  if(aCur)speak(aCur.s+'. Qual é a letra? Escolha a letra certa!',0.82);
+}
+function startAbc(){
+  aDone=false;
+  aCur=LETTERS[Math.floor(Math.random()*LETTERS.length)];
+  $('abc-ltr').textContent=aCur.l;
+  $('abc-pic').textContent=aCur.p;
+  $('abc-word').textContent='de '+aCur.w;
+  $('abc-fb').className='fb';
+  $('abc-nxt').classList.remove('show');
+  var cfg=ABC_PH[Math.min(S.abcPh,ABC_PH.length)-1];
+  var oth=LETTERS.filter(function(x){return x.l!==aCur.l;}).sort(function(){return Math.random()-.5;}).slice(0,cfg.o-1);
+  var opts=[aCur].concat(oth).sort(function(){return Math.random()-.5;});
+  var cont=$('abc-opts');
+  cont.className='aopts '+(cfg.o>3?'c4':'c3');
+  cont.innerHTML='';
+  opts.forEach(function(o){
+    var b=document.createElement('button');
+    b.className='abtn';
+    b.textContent=o.l;
+    b.addEventListener('click',function(){ansAbc(b,o.l===aCur.l);});
+    cont.appendChild(b);
+  });
+  setTimeout(function(){
+    speak(aCur.s+'. Qual é a letra? Escolha a letra certa!',0.82);
+  },400);
+}
+function ansAbc(b,ok){
+  if(aDone)return;aDone=true;
+  if(ok){
+    b.classList.add('correct');
+    S.abcSc+=10;S.abcWon++;
+    $('abc-sc').textContent=S.abcSc;
+    coins(10);var lu=xp(15);sfx.ok();
+    fb('abc-fb','\u{1F389} Isso! Letra '+aCur.l+'! +10 \u{1FA99}','ok');
+    speak('Muito bem! Você acertou!');
+    $('abc-nxt').classList.add('show');
+    if(S.abcWon%4===0&&S.abcPh<ABC_PH.length){
+      S.abcPh++;hud();
+      setTimeout(function(){cel('\u{1F524}','Fase '+S.abcPh+'!','Avançou no Alfabeto!','+20 \u{1FA99}',lu?S.level:0);},400);
+    }
+    sched();
+  }else{
+    b.classList.add('wrong');
+    fb('abc-fb','Era a letra '+aCur.l+'!','err');
+    sfx.no();
+    speak('Não é essa! A letra certa é '+aCur.l+'. Tente de novo!');
+    $('abc-nxt').classList.add('show');
+  }
+}
 
 // COUNTING
 var cObj=null,cCorr=0,cDone=false;
