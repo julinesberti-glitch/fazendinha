@@ -257,13 +257,13 @@ var AIMG={};
 var SK='fazendinha_v3';
 var LETTERS=[
   {l:'A',p:'\u{1F34D}',w:'Abacaxi',s:'A de Abacaxi'},{l:'B',p:'\u{1F34C}',w:'Banana',s:'B de Banana'},
-  {l:'C',p:'\u{1F955}',w:'Cenoura',s:'C de Cenoura'},{l:'D',p:'\u{1F436}',w:'Cachorro',s:'C de Cachorro'},
-  {l:'E',p:'\u{1F418}',w:'Elefante',s:'E de Elefante'},{l:'F',p:'\u{1F338}',w:'Flor',s:'F de Flor'},
+  {l:'C',p:'\u{1F955}',w:'Cenoura',s:'C de Cenoura'},{l:'C',p:'\u{1F436}',w:'Cachorro',s:'C de Cachorro'},
+  {l:'E',p:'\u{1F418}',w:'Elefante',s:'Eee de Elefante'},{l:'F',p:'\u{1F338}',w:'Flor',s:'F de Flor'},
   {l:'G',p:'\u{1F414}',w:'Galinha',s:'G de Galinha'},{l:'C',p:'\u{1F3E0}',w:'Casa',s:'C de Casa'},
   {l:'I',p:'\u{1F98E}',w:'Iguana',s:'I de Iguana'},{l:'J',p:'\u{1F40A}',w:'Jacaré',s:'J de Jacaré'},
-  {l:'L',p:'\u{1F981}',w:'Leão',s:'L de Leão'},{l:'M',p:'\u{1F348}',w:'Melao',s:'M de Melao'},
+  {l:'L',p:'\u{1F981}',w:'Leão',s:'L de Leão'},{l:'M',p:'\u{1F348}',w:'Melão',s:'M de Melão'},
   {l:'N',p:'\u2601\uFE0F',w:'Nuvem',s:'N de Nuvem'},{l:'O',p:'\u{1F411}',w:'Ovelha',s:'O de Ovelha'},
-  {l:'P',p:'\u{1F41F}',w:'Peixe',s:'P de Peixe'},{l:'R',p:'\u{1F438}',w:'Ra',s:'R de Rã'},
+  {l:'P',p:'\u{1F41F}',w:'Peixe',s:'P de Peixe'},{l:'R',p:'\u{1F438}',w:'Rã',s:'R de Rã'},
   {l:'S',p:'\u{1F31E}',w:'Sol',s:'S de Sol'},{l:'T',p:'\u{1F422}',w:'Tartaruga',s:'T de Tartaruga'},
   {l:'U',p:'\u{1F347}',w:'Uva',s:'U de Uva'},{l:'V',p:'\u{1F404}',w:'Vaca',s:'V de Vaca'},
   {l:'Z',p:'\u{1F993}',w:'Zebra',s:'Z de Zebra'},{l:'S',p:'\u{1F438}',w:'Sapo',s:'S de Sapo'},{l:'M',p:'\u{1F34E}',w:'Maçã',s:'M de Maçã'}
@@ -280,13 +280,12 @@ var M3_E=['\u{1F34E}','\u{1F34C}','\u{1F353}','\u{1F355}','\u2B50','\u{1F338}','
 var COLORS=[{n:'Vermelho',h:'#EF5350',e:'\u{1F534}'},{n:'Azul',h:'#1976D2',e:'\u{1F535}'},{n:'Verde',h:'#4CAF50',e:'\u{1F7E2}'},{n:'Amarelo',h:'#FFD700',e:'\u{1F7E1}'},{n:'Roxo',h:'#7B1FA2',e:'\u{1F7E3}'},{n:'Laranja',h:'#FF9800',e:'\u{1F7E0}'}];
 var SHAPES=[{n:'Circulo',d:'circle'},{n:'Quadrado',d:'square'},{n:'Triângulo',d:'triangle'},{n:'Estrela',d:'star'}];
 var FEED=[
-  {k:'vaca',   n:'Vaca',    img:'vaca',    food:{e:'\u{1F33E}',n:'Capim',ok:true},   w:[{e:'\u{1F41F}',n:'Peixe'},{e:'\u{1F355}',n:'Pizza'},{e:'\u{1F33D}',n:'Milho'}]},
-  {k:'boi',    n:'Boi',     img:'boi',     food:{e:'\u{1F33E}',n:'Capim',ok:true},   w:[{e:'\u{1F41F}',n:'Peixe'},{e:'\u{1F36D}',n:'Doce'}, {e:'\u{1F33D}',n:'Milho'}]},
-  {k:'galinha',n:'Galinha', img:'galinha', food:{e:'\u{1F33D}',n:'Milho',ok:true},   w:[{e:'\u{1F41F}',n:'Peixe'},{e:'\u{1F355}',n:'Pizza'},{e:'\u{1F33E}',n:'Capim'}]},
-  {k:'ovelha', n:'Ovelha',  img:'ovelha',  food:{e:'\u{1F33F}',n:'Grama',ok:true},   w:[{e:'\u{1F41F}',n:'Peixe'},{e:'\u{1F355}',n:'Pizza'},{e:'\u{1F33D}',n:'Milho'}]},
-  {k:'pintinho',n:'Pintinho',img:'pintinho',food:{e:'\u{1F33E}',n:'Milhinhos',ok:true},w:[{e:'\u{1F41F}',n:'Peixe'},{e:'\u{1F355}',n:'Pizza'},{e:'\u{1F33F}',n:'Grama'}]},
-];
-var CROPS={carrot:{i:'\u{1F955}',n:'Cenoura',g:8000,s:5},strawberry:{i:'\u{1F353}',n:'Morango',g:12000,s:10},corn:{i:'\u{1F33D}',n:'Milho',g:18000,s:15,c:10},apple:{i:'\u{1F34E}',n:'Maçã',g:25000,s:20,c:20},sunflower:{i:'\u{1F33B}',n:'Girassol',g:30000,s:30,c:50}};
+  {k:'vaca',   n:'Vaca',    artigo:'a',  img:'vaca',    food:{e:'\u{1F33E}',n:'Capim',ok:true},   w:[{e:'\u{1F41F}',n:'Peixe'},{e:'\u{1F355}',n:'Pizza'},{e:'\u{1F33D}',n:'Milho'}]},
+  {k:'boi',    n:'Boi',     artigo:'o',  img:'boi',     food:{e:'\u{1F33E}',n:'Capim',ok:true},   w:[{e:'\u{1F41F}',n:'Peixe'},{e:'\u{1F36D}',n:'Doce'}, {e:'\u{1F33D}',n:'Milho'}]},
+  {k:'galinha',n:'Galinha', artigo:'a',  img:'galinha', food:{e:'\u{1F33D}',n:'Milho',ok:true},   w:[{e:'\u{1F41F}',n:'Peixe'},{e:'\u{1F355}',n:'Pizza'},{e:'\u{1F33E}',n:'Capim'}]},
+  {k:'ovelha', n:'Ovelha',  artigo:'a',  img:'ovelha',  food:{e:'\u{1F33F}',n:'Grama',ok:true},   w:[{e:'\u{1F41F}',n:'Peixe'},{e:'\u{1F355}',n:'Pizza'},{e:'\u{1F33D}',n:'Milho'}]},
+  {k:'pintinho',n:'Pintinho',artigo:'o', img:'pintinho',food:{e:'\u{1F33E}',n:'Milhinhos',ok:true},w:[{e:'\u{1F41F}',n:'Peixe'},{e:'\u{1F355}',n:'Pizza'},{e:'\u{1F33F}',n:'Grama'}]},
+];var CROPS={carrot:{i:'\u{1F955}',n:'Cenoura',g:8000,s:5},strawberry:{i:'\u{1F353}',n:'Morango',g:12000,s:10},corn:{i:'\u{1F33D}',n:'Milho',g:18000,s:15,c:10},apple:{i:'\u{1F34E}',n:'Maçã',g:25000,s:20,c:20},sunflower:{i:'\u{1F33B}',n:'Girassol',g:30000,s:30,c:50}};
 var SP={egg:8,milk:12,honey:20,carrot:5,strawberry:10,corn:15,apple:20,sunflower:30};
 var RWDS=[
   {id:'cat',  imgK:'gato',    n:'Gatinho',    r:'Nivel 1',   ok:function(){return S.level>=1;}},
@@ -382,15 +381,15 @@ function updMP(){$('mem-pf').style.width=(mTotal?mMatch/mTotal*100:0)+'%';$('mem
 
 // MATCH3
 var m3Sel=[],m3Solved=0,m3Total=0,m3TI=null,m3TimeLeft=0;
-function speakM3(){speak('Toque em tres figuras iguais para elimina-las!');}
+function speakM3(){speak('Toque em três figuras iguais para elimina-las!');}
 function startM3(){clearInterval(m3TI);m3Sel=[];m3Solved=0;$('m3-fb').className='fb';$('m3-nxt').classList.remove('show');var cfg=M3_PH[Math.min(S.m3Ph,M3_PH.length)-1];var total=cfg.cols*cfg.rows;var sets=Math.floor(total/3);m3Total=sets;var pool=M3_E.slice(0,sets);var items=[];pool.forEach(function(e){items.push(e,e,e);});while(items.length<total)items.push(pool[Math.floor(Math.random()*pool.length)]);items=items.slice(0,total).sort(function(){return Math.random()-.5;});var g=$('m3-grid');g.style.gridTemplateColumns='repeat('+cfg.cols+',1fr)';g.innerHTML='';items.forEach(function(e){var b=document.createElement('div');b.className='a3c';b.textContent=e;b.dataset.v=e;b.addEventListener('click',function(){selM3(b);});g.appendChild(b);});m3TimeLeft=60;var fill=$('a3-fill');fill.style.width='100%';fill.style.background='linear-gradient(90deg,#66BB6A,#1976D2)';m3TI=setInterval(function(){m3TimeLeft--;fill.style.width=(m3TimeLeft/60*100)+'%';if(m3TimeLeft<=15)fill.style.background='linear-gradient(90deg,#EF5350,#FF9800)';if(m3TimeLeft<=0){clearInterval(m3TI);$('m3-nxt').classList.add('show');fb('m3-fb','Tempo acabou! '+m3Solved+' grupos!','err');speak('O tempo acabou!');}},1000);}
-function selM3(b){if(b.classList.contains('matched')||b.classList.contains('gone'))return;var idx=m3Sel.indexOf(b);if(idx>=0){b.classList.remove('selected');m3Sel.splice(idx,1);return;}if(m3Sel.length>=3)return;b.classList.add('selected');m3Sel.push(b);if(m3Sel.length===3){var vs=m3Sel.map(function(x){return x.dataset.v;});if(vs[0]===vs[1]&&vs[1]===vs[2]){m3Sel.forEach(function(x){x.classList.remove('selected');x.classList.add('matched');setTimeout(function(){x.classList.add('gone');},300);});m3Solved++;coins(10);xp(12);sfx.ok();fb('m3-fb','\u{1F389} Tres iguais! +10 \u{1FA99}','ok');speak('Isso! Tres iguais!');if(m3Solved===m3Total){clearInterval(m3TI);S.m3Won++;var bonus=30,msg='Voce achou todos!';if(S.m3Won%3===0&&S.m3Ph<M3_PH.length){S.m3Ph++;msg='Fase '+S.m3Ph+'!';bonus=50;hud();}coins(bonus);$('m3-nxt').classList.add('show');setTimeout(function(){speak('Parabens!');cel('\u{1F3AF}',msg,'Todos os grupos!','+'+bonus+'\u{1FA99}',0);},500);sched();}}else{m3Sel.forEach(function(x){x.classList.add('wrong-sel');setTimeout(function(){x.classList.remove('wrong-sel','selected');},500);});sfx.no();speak('Esses nao sao iguais!');}m3Sel=[];}}
+function selM3(b){if(b.classList.contains('matched')||b.classList.contains('gone'))return;var idx=m3Sel.indexOf(b);if(idx>=0){b.classList.remove('selected');m3Sel.splice(idx,1);return;}if(m3Sel.length>=3)return;b.classList.add('selected');m3Sel.push(b);if(m3Sel.length===3){var vs=m3Sel.map(function(x){return x.dataset.v;});if(vs[0]===vs[1]&&vs[1]===vs[2]){m3Sel.forEach(function(x){x.classList.remove('selected');x.classList.add('matched');setTimeout(function(){x.classList.add('gone');},300);});m3Solved++;coins(10);xp(12);sfx.ok();fb('m3-fb','\u{1F389} Tres iguais! +10 \u{1FA99}','ok');speak('Isso! Tres iguais!');if(m3Solved===m3Total){clearInterval(m3TI);S.m3Won++;var bonus=30,msg='Voce achou todos!';if(S.m3Won%3===0&&S.m3Ph<M3_PH.length){S.m3Ph++;msg='Fase '+S.m3Ph+'!';bonus=50;hud();}coins(bonus);$('m3-nxt').classList.add('show');setTimeout(function(){speak('Parabens!');cel('\u{1F3AF}',msg,'Todos os grupos!','+'+bonus+'\u{1FA99}',0);},500);sched();}}else{m3Sel.forEach(function(x){x.classList.add('wrong-sel');setTimeout(function(){x.classList.remove('wrong-sel','selected');},500);});sfx.no();speak('Esses não sao iguais!');}m3Sel=[];}}
 
 // ALPHABET
 var aCur=null,aDone=false;
 function speakAbc(){if(aCur)speak(aCur.s+'. Qual é a letra?',0.82);}
 function startAbc(){aDone=false;aCur=LETTERS[Math.floor(Math.random()*LETTERS.length)];$('abc-ltr').textContent=aCur.l;$('abc-pic').textContent=aCur.p;$('abc-word').textContent='de '+aCur.w;$('abc-fb').className='fb';$('abc-nxt').classList.remove('show');var cfg=ABC_PH[Math.min(S.abcPh,ABC_PH.length)-1];var oth=LETTERS.filter(function(x){return x.l!==aCur.l;}).sort(function(){return Math.random()-.5;}).slice(0,cfg.o-1);var opts=[aCur].concat(oth).sort(function(){return Math.random()-.5;});var cont=$('abc-opts');cont.className='aopts '+(cfg.o>3?'c4':'c3');cont.innerHTML='';opts.forEach(function(o){var b=document.createElement('button');b.className='abtn';b.textContent=o.l;b.addEventListener('click',function(){ansAbc(b,o.l===aCur.l);});cont.appendChild(b);});setTimeout(function(){speak(aCur.s+'. Qual é a letra?',0.82);},400);}
-function ansAbc(b,ok){if(aDone)return;aDone=true;if(ok){b.classList.add('correct');S.abcSc+=10;S.abcWon++;$('abc-sc').textContent=S.abcSc;coins(10);var lu=xp(15);sfx.ok();fb('abc-fb','\u{1F389} Isso! Letra '+aCur.l+'! +10 \u{1FA99}','ok');speak('Muito bem!');$('abc-nxt').classList.add('show');if(S.abcWon%4===0&&S.abcPh<ABC_PH.length){S.abcPh++;hud();setTimeout(function(){cel('\u{1F524}','Fase '+S.abcPh+'!','Avancou no Alfabeto!','+20 \u{1FA99}',lu?S.level:0);},400);}sched();}else{b.classList.add('wrong');fb('abc-fb','Era a letra '+aCur.l+'!','err');sfx.no();speak('Nao! A letra e '+aCur.l);$('abc-nxt').classList.add('show');}}
+function ansAbc(b,ok){if(aDone)return;aDone=true;if(ok){b.classList.add('correct');S.abcSc+=10;S.abcWon++;$('abc-sc').textContent=S.abcSc;coins(10);var lu=xp(15);sfx.ok();fb('abc-fb','\u{1F389} Isso! Letra '+aCur.l+'! +10 \u{1FA99}','ok');speak('Muito bem!');$('abc-nxt').classList.add('show');if(S.abcWon%4===0&&S.abcPh<ABC_PH.length){S.abcPh++;hud();setTimeout(function(){cel('\u{1F524}','Fase '+S.abcPh+'!','Avancou no Alfabeto!','+20 \u{1FA99}',lu?S.level:0);},400);}sched();}else{b.classList.add('wrong');fb('abc-fb','Era a letra '+aCur.l+'!','err');sfx.no();speak('Não! A letra e '+aCur.l);$('abc-nxt').classList.add('show');}}
 
 // COUNTING
 var cObj=null,cCorr=0,cDone=false;
@@ -514,14 +513,54 @@ function ansCnt(b,ok){
 var colCur=null,colMode='color',colDone=false;
 function speakCol(){speak(colMode==='color'?'Que cor é essa?':'Que forma é essa?');}
 function startCol(){colDone=false;colMode=S.colPh%2===1?'color':'shape';$('col-fb').className='fb';$('col-nxt').classList.remove('show');$('col-badge').textContent=colMode==='color'?'Cores':'Formas';var sw=$('col-shape');var oc=$('col-opts');if(colMode==='color'){colCur=COLORS[Math.floor(Math.random()*COLORS.length)];sw.innerHTML='<div style="width:90px;height:90px;background:'+colCur.h+';border-radius:50%;box-shadow:0 4px 12px rgba(0,0,0,.2)"></div>';$('col-ask').textContent='Que cor é essa? \u{1F3A8}';var oth=COLORS.filter(function(c){return c.n!==colCur.n;}).sort(function(){return Math.random()-.5;}).slice(0,3);var opts=[colCur].concat(oth).sort(function(){return Math.random()-.5;});oc.className='colopts';oc.innerHTML='';opts.forEach(function(c){var b=document.createElement('button');b.className='colbtn';b.style.cssText='background:'+c.h+';border-color:'+c.h;b.innerHTML=c.e+'<br>'+c.n;b.addEventListener('click',function(){ansCol(b,c.n===colCur.n);});oc.appendChild(b);});setTimeout(function(){speak('Que cor é essa?');},400);}else{colCur=SHAPES[Math.floor(Math.random()*SHAPES.length)];var svgs={circle:'<circle cx="40" cy="40" r="36" fill="#1976D2"/>',square:'<rect x="8" y="8" width="64" height="64" rx="6" fill="#EF5350"/>',triangle:'<polygon points="40,6 76,74 4,74" fill="#4CAF50"/>',star:'<polygon points="40,4 49,30 76,30 54,48 62,74 40,58 18,74 26,48 4,30 31,30" fill="#FFD700"/>'};sw.innerHTML='<svg width="90" height="90" viewBox="0 0 80 80">'+svgs[colCur.d]+'</svg>';$('col-ask').textContent='Que forma é essa? \u{1F537}';var oth2=SHAPES.filter(function(s){return s.n!==colCur.n;}).sort(function(){return Math.random()-.5;}).slice(0,3);var opts2=[colCur].concat(oth2).sort(function(){return Math.random()-.5;});oc.className='colopts';oc.innerHTML='';opts2.forEach(function(s){var b=document.createElement('button');b.className='colbtn';b.style.cssText='background:#E3F2FD;color:#1565C0;border-color:#90CAF9;text-shadow:none';b.textContent=s.n;b.addEventListener('click',function(){ansCol(b,s.n===colCur.n);});oc.appendChild(b);});setTimeout(function(){speak('Que forma é essa?');},400);}}
-function ansCol(b,ok){if(colDone)return;colDone=true;if(ok){b.classList.add('correct');S.colSc+=10;S.colWon++;$('col-sc').textContent=S.colSc;coins(10);xp(12);sfx.ok();fb('col-fb','\u{1F389} Isso! E '+colCur.n+'! +10 \u{1FA99}','ok');speak('Muito bem! E '+colCur.n+'!');$('col-nxt').classList.add('show');if(S.colWon%4===0){S.colPh++;hud();}sched();}else{b.classList.add('wrong');fb('col-fb','Era '+colCur.n+'!','err');sfx.no();speak('Nao! E '+colCur.n);$('col-nxt').classList.add('show');}}
+function ansCol(b,ok){if(colDone)return;colDone=true;if(ok){b.classList.add('correct');S.colSc+=10;S.colWon++;$('col-sc').textContent=S.colSc;coins(10);xp(12);sfx.ok();fb('col-fb','\u{1F389} Isso! E '+colCur.n+'! +10 \u{1FA99}','ok');speak('Muito bem! E '+colCur.n+'!');$('col-nxt').classList.add('show');if(S.colWon%4===0){S.colPh++;hud();}sched();}else{b.classList.add('wrong');fb('col-fb','Era '+colCur.n+'!','err');sfx.no();speak('Não! E '+colCur.n);$('col-nxt').classList.add('show');}}
 
 // FEED
 var feedCur=null,feedDone=false;
-function speakFeed(){if(feedCur)speak('O que a '+feedCur.n+' come?',0.85);}
-function startFeed(){feedDone=false;feedCur=FEED[Math.floor(Math.random()*FEED.length)];$('feed-aimg').src=feedCur.img+'.png';$('feed-aname').textContent=feedCur.n;$('feed-ask').textContent='O que a '+feedCur.n+' come?';$('feed-fb').className='fb';$('feed-nxt').classList.remove('show');var wrongs=feedCur.w.slice().sort(function(){return Math.random()-.5;}).slice(0,2);var opts=[feedCur.food].concat(wrongs).sort(function(){return Math.random()-.5;});var div=$('feed-opts');div.innerHTML='';opts.forEach(function(o){var b=document.createElement('button');b.className='foodbtn';var p=document.createElement('p');p.textContent=o.n;b.textContent=o.e;b.appendChild(p);b.addEventListener('click',function(){ansFeed(b,!!o.ok);});div.appendChild(b);});setTimeout(function(){speak('O que a '+feedCur.n+' come?',0.85);},400);}
-function ansFeed(b,ok){if(feedDone)return;feedDone=true;if(ok){b.classList.add('correct');S.feedSc+=10;S.feedWon++;$('feed-sc').textContent=S.feedSc;coins(10);xp(12);sfx.ok();fb('feed-fb','\u{1F389} Correto! +10 \u{1FA99}','ok');speak('Muito bem!');$('feed-nxt').classList.add('show');sched();}else{b.classList.add('wrong');fb('feed-fb','Nao e isso! Tente de novo!','err');sfx.no();speak('Nao e isso!');$('feed-nxt').classList.add('show');}}
-
+function speakFeed(){
+  if(feedCur)speak('O que '+feedCur.artigo+' '+feedCur.n+' come?',0.85);
+}
+function startFeed(){
+  feedDone=false;
+  feedCur=FEED[Math.floor(Math.random()*FEED.length)];
+  $('feed-aimg').src=feedCur.img+'.png';
+  $('feed-aname').textContent=feedCur.n;
+  $('feed-ask').textContent='O que '+feedCur.artigo+' '+feedCur.n+' come?';
+  $('feed-fb').className='fb';
+  $('feed-nxt').classList.remove('show');
+  var wrongs=feedCur.w.slice().sort(function(){return Math.random()-.5;}).slice(0,2);
+  var opts=[feedCur.food].concat(wrongs).sort(function(){return Math.random()-.5;});
+  var div=$('feed-opts');div.innerHTML='';
+  opts.forEach(function(o){
+    var b=document.createElement('button');
+    b.className='foodbtn';
+    var p=document.createElement('p');
+    p.textContent=o.n;
+    b.textContent=o.e;
+    b.appendChild(p);
+    b.addEventListener('click',function(){ansFeed(b,!!o.ok);});
+    div.appendChild(b);
+  });
+  setTimeout(function(){speak('O que '+feedCur.artigo+' '+feedCur.n+' come? Escolha o alimento certo!',0.85);},400);
+}
+function ansFeed(b,ok){
+  if(feedDone)return;feedDone=true;
+  if(ok){
+    b.classList.add('correct');
+    S.feedSc+=10;S.feedWon++;
+    $('feed-sc').textContent=S.feedSc;
+    coins(10);xp(12);sfx.ok();
+    fb('feed-fb','\u{1F389} Correto! +10 \u{1FA99}','ok');
+    speak('Muito bem! '+feedCur.artigo+' '+feedCur.n+' come isso!');
+    $('feed-nxt').classList.add('show');sched();
+  }else{
+    b.classList.add('wrong');
+    fb('feed-fb','N\u00E3o \u00E9 isso! Tente de novo!','err');
+    sfx.no();
+    speak('N\u00E3o \u00E9 isso! O que '+feedCur.artigo+' '+feedCur.n+' come?');
+    $('feed-nxt').classList.add('show');
+  }
+}
 // FARM
 var farmRunning=false;
 var animA={
